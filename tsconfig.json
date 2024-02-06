@@ -1,0 +1,12 @@
+{
+	"compilerOptions": {
+		"target": "es5",
+		"lib": ["dom", "es2015"],
+		"module": "ESNext",
+		"strict": true,
+		"esModuleInterop": true,
+		"sourceMap": true,
+		"outDir": "./dist",
+	},
+	"include": ["src/**/*"]
+}

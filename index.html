@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Meteo</title>
+	<link rel="stylesheet" href="dist/style.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+	<script src="dist/main.js" async></script>
+</head>
+
+<body>
+
+	<main class="container">
+		<header>
+			<form class="city-search-form">
+				<div class="search-wrapper">
+					<label for="city" class="visually-hidden">
+						Di quale città vuoi vedere le previsioni del meteo?
+					</label>
+					<input type="search" name="city" id="city" class="city" placeholder="Cerca la città" autocomplete="off">
+					<button type="submit">Cerca</button>
+				</div>
+				<ul class="search-results" aria-live="assertive"></ul>
+			</form>
+		</header>
+		<section class="weather-card" aria-live="assertive" aria-label="Previsioni per la città selezionata">
+			<section class="weather-stats" aria-label="Meteo ora nella città selezionata">
+				<p class="weather-main">Nuvoloso</p>
+				<p class="weather-location">Milano, Italia</p>
+				<p class="weather-temperature">25°C</p>
+			</section>
+			<section class="weather-daily" aria-label="Meteo nei prossimi giorni nella città selezionata">
+				<ul>
+					<li>
+						<span class="day">Lunedì</span>
+						<span class="stats">
+							<span>25°C</span>
+							<span>Nuvoloso</span>
+						</span>
+					</li>
+					<li>
+						<span class="day">Lunedì</span>
+						<span class="stats">
+							<span>25°C</span>
+							<span>Nuvoloso</span>
+						</span>
+					</li>
+					<li>
+						<span class="day">Lunedì</span>
+						<span class="stats">
+							<span>25°C</span>
+							<span>Nuvoloso</span>
+						</span>
+					</li>
+					<li>
+						<span class="day">Lunedì</span>
+						<span class="stats">
+							<span>25°C</span>
+							<span>Nuvoloso</span>
+						</span>
+					</li>
+				</ul>
+			</section>
+		</section>
+	</main>
+
+</body>
+
+</html>
